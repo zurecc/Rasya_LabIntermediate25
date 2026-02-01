@@ -76,12 +76,12 @@ def round():
             
 
 while True:
+    round()
+
     if not wordlist:
-        print("+--------------------------+")
         print(" ")
         print("No more words left")
         break
-    round()
     print(" ")
     play_again = input("Do you want to play again? (y/n) ").lower()
     if play_again == "n":
@@ -99,3 +99,6 @@ print(" ")
 print("+--------------------------+")
 print(" ")
 print("Total Wins :", wins, ", Total Losses :", losses)
+print(" ")
+print("+--------------------------+")
+
